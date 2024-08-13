@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Q'z Sports Hub</title>
+    <link rel="stylesheet" href="styles.css">
+	<link rel="shortcut icon" href="soccer-9133_256.gif" type="gif/x-icon" />
+			
+			<style type="text/css">
+					
+/* Video background */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video-background video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+					
+												body {
+														margin: 0;
+														padding: 0;
+													}
+											 											 
+													section .rightBox {
+														width: 50%;
+														height: 100%;
+														float: right;
+														padding: 50px;
+														box-sizing: border-box;
+													}
+											 
+													section .rightBox .content {
+														color: #fff;
+														background: rgba(0, 0, 0, 0.5);
+														padding: 40px;
+														transition: .5s;
+													}
+											 
+													section .rightBox .content:hover {
+														background: #08073d;
+													}
+											 
+													section .rightBox .content h1 {
+														margin: 0;
+														padding: 0;
+														font-size: 50px;
+														text-transform: uppercase;
+													}
+											 
+													section .rightBox .content p {
+														margin: 10px 0 0;
+														padding: 0;
+													}
+											 
+													section .events {
+														position: relative;
+														width: 50%;
+														height: 100%;
+														background: rgba(0, 0, 0, 0.5);
+														float: right;
+														box-sizing: border-box;
+													}
+											 
+													section .events ul {
+														position: absolute;
+														top: 50%;
+														transform: translateY(-50%);
+														margin: 0;
+														padding: 40px;
+														box-sizing: border-box;
+													}
+											 
+													section .events ul li {
+														list-style: none;
+														background: #fff;
+														box-sizing: border-box;
+														height: 200px;
+														margin: 15px 0;
+													}
+											 
+													section .events ul li .time {
+														position: relative;
+														padding: 20px;
+														background: #262626;
+														box-sizing: border-box;
+														width: 30%;
+														height: 100%;
+														float: left;
+														text-align: center;
+														transition: .5s;
+													}
+											 
+													section .events ul li:hover .time {
+														background: #e91e63;
+													}
+											 
+													section .events ul li .time h2 {
+														position: absolute;
+														margin: 0;
+														padding: 0;
+														top: 50%;
+														left: 50%;
+														transform: translate(-50%, -50%);
+														color: #fff;
+														font-size: 60px;
+														line-height: 30px;
+													}
+											 
+													section .events ul li .time h2 span {
+														font-size: 30px;
+													}
+											 
+													section .events ul li .details {
+														padding: 20px;
+														background: #fff;
+														box-sizing: border-box;
+														width: 70%;
+														height: 100%;
+														float: left;
+													}
+											 
+													section .events ul li .details h3 {
+														position: relative;
+														margin: 0;
+														padding: 0;
+														font-size: 22px;
+													}
+											 
+													section .events ul li .details p {
+														position: relative;
+														margin: 10px 0 0;
+														padding: 0;
+														font-size: 16px;
+													}
+											 
+													section .events ul li .details a {
+														display: inline-block;
+														text-decoration: none;
+														padding: 10px 15px;
+														border: 1.5px solid #262626;
+														margin-top: 8px;
+														font-size: 18px;
+														transition: .5s;
+													}
+											 
+													section .events ul li .details a:hover {
+														background: #e91e63;
+														color: #fff;
+														border-color: #e91e63;
+													}
+.moving-text {
+    font-size: 34px;
+	color: white;
+	font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    animation: moveText 50s linear infinite;
+}
+
+@keyframes moveText {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}	
+					.hover-text {
+						font-size: 20px;
+						font-weight: bold;
+						color: white;
+						transition: transform 5s;
+					}
+
+					.hover-text:hover {
+						transform: translateX(100px);
+					}
+			</style>
+	
+</head>
+<body>
+				<div class="video-background">
+						<video autoplay loop muted playsinline>
+							<source src="1-NAKIVUBO STADIUM READY FOR THE LAUNCH.mp4" type="video/mp4">
+						</video>
+				</div>
+    <header>
+			<h1>The Q'z Sports Hub</h1>
+				<nav>
+					<ul class="nav-left">
+						<li class="logo">
+							<img src="soccer-9133_256.gif" alt="Logo GIF" class="log">
+						</li>
+					</ul>
+		
+		<ul>
+			    <ul class="nav-right">
+                <li><a href="index.html">Home</a>
+                    <ul class="dropdown">
+                        <li><a href="NewsPage.html">News</a></li>
+                        <li><a href="Fixtures.html">Fixtures</a></li>
+                        <li><a href="UpcomingEvents.html">Upcoming Events</a></li>
+                        <li><a href="SurveyForm.html">SurveyForm</a></li>
+                    </ul>
+                </li>				
+                <li><i class="fa fa-users"></i><a href="about.html">About</a></li>
+                <li><i class="fa fa-envelope"></i><a href="contact.html">Contact</a></li>
+				<li><a href="#signup" id="signupBtn">Sign Up</a></li>
+        </ul>
+        </nav>
+		
+		
+    </header>
+    <main>
+        <section>
+            <div class="moving-text">
+       Welcome to The Q'z Sports Hub
+			</div>
+			
+        </section>
+		
+         
+	<section>
+        <div class="rightBox">
+            <div class="content">
+                <h1>
+                    About us
+                </h1>
+                <p>
+                   The Q'z Sports Hub isn't a business; it's a collaborative, community-driven initiative committed to enhancing community sport.
+This online platform represents just one of many initiatives stemming from the collective voices of our community members.
+Supported by provincial and municipal partners and powered by dedicated volunteers,
+it provides numerous opportunities for active engagement within our communities.
+Through our emphasis on collective impact, our aim is to foster a more united, engaged, and healthier community through sport.
+It’s time to play. 
+
+By using this site, you agree to the Terms of Use.
+
+We acknowledge the work we do to support quality community sport takes place on the traditional lands.
+We respect the Treaties of Peace and Friendship made here, and are thankful to play on this land.
+         </p>
+            </div>
+        </div>
+		</section>
+							
+			   <!-- Video Section -->
+        <section class="video-section">
+    <div class="hover-text">
+       	   <h2>Featured Video</h2>
+	</div>
+            <video controls autoplay loop muted>
+                <source src="videoplayback.mp4" type="video/mp4">      
+            </video>
+        </section>
+	</main>
+						
+					<div id="signupModal" class="modal">
+						<div class="modal-content">
+							<span class="close">&times;</span>
+							<h2>Create an Account</h2>
+							<form id="signupForm">
+								<label for="username">Username:</label>
+								<input type="text" id="username" name="username" required>
+								<label for="email">Email:</label>
+								<input type="email" id="email" name="email" required>
+								<label for="password">Password:</label>
+								<input type="password" id="password" name="password" required>
+								<button type="submit">Sign Up</button>
+							</form>
+						</div>
+					</div>
+						
+					<footer>
+					<p>&copy; 2024 Sports Hub. All rights reserved.</p>
+					</footer>
+									<script src="javascript.js"></script>
+									 <script src="script.js"></script>
+</body>
+</html>

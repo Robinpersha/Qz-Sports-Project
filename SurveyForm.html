@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+	<link rel="shortcut icon" href="soccer-9133_256.gif" type="gif/x-icon" />
+		
+    <style>
+        body {
+            display: flex;
+           justify-content: center;
+		   color: white;
+           align-items: center;
+           min-height: 100vh;
+           margin: 40;
+           background-image: url('893204_22091.jpg');
+		   background-size: cover; 
+		   background-position: center; 
+		   background-repeat: no-repeat;
+        }
+
+        form {
+            width: 70%;
+			background-color: #401730;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        fieldset {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+		
+		legend {
+            font-weight: bold;
+            padding: 0 10px;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        .submit-button {
+            background-color: skyblue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .cancel-button {
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+				
+    <form action="/submit" method="post">
+        <fieldset>
+		    <legend>Survey Form</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Survey Questions</legend>
+            <p>What are your favorite sports?</p>
+            <input type="checkbox" id="football" name="sports" value="football">
+            <label for="football">Football</label><br>
+            
+            <input type="checkbox" id="basketball" name="sports" value="basketball">
+            <label for="basketball">Basketball</label><br>
+            
+            <input type="checkbox" id="cricket" name="sports" value="cricket">
+            <label for="cricket">Cricket</label><br>
+            
+            <input type="checkbox" id="tennis" name="sports" value="tennis">
+            <label for="tennis">Tennis</label><br>
+            
+            <input type="checkbox" id="other" name="sports" value="other">
+            <label for="other">Other</label><br><br>
+
+            <p>Preferred contact method:</p>
+            <input type="radio" id="contact_email" name="contact_method" value="email" required>
+            <label for="contact_email">Email</label><br>
+            
+            <input type="radio" id="contact_phone" name="contact_method" value="phone">
+            <label for="contact_phone">Phone</label><br>
+            
+            <input type="radio" id="contact_mail" name="contact_method" value="mail">
+            <label for="contact_mail">Mail</label><br><br>
+
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="">Select your country</option>
+                <option value="dz">Algeria</option>
+                <option value="ao">Angola</option>
+                <option value="bj">Benin</option>
+                <option value="bw">Botswana</option>
+				<option value="bf">Burkina Faso</option>
+                <option value="bi">Burundi</option>
+                <option value="cv">Cabo Verde (Cape Verde</option>
+                <option value="cm">Cameroon</option>
+				<option value="cf">Central African Republic (CAR)</option>
+                <option value="td">Chad</option>
+                <option value="km">Comoros</option>
+                <option value="cd">Democratic Republic of the Congo (DRC)</option>
+				<option value="cg">Republic of Congo</option>
+                <option value="dj">Djibouti</option>
+                <option value="eg">Egypt</option>
+                <option value="gq">Equatorial Guinea</option>
+				<option value="er">Eritrea</option>
+                <option value="sz">Eswatini(Swaziland)</option>
+                <option value="et">Ethiopia</option>
+                <option value="ga">Gabon</option>
+				<option value="gm">The Gambia</option>
+                <option value="gh">Ghana</option>
+                <option value="gn">Guinea</option>
+                <option value="gw">Guinea-Bissau</option>
+				<option value="cl">Ivory Coast (Cote d'lvoire)</option>
+                <option value="ke">Kenya</option>
+                <option value="ls">Lesotho</option>
+                <option value="lr">Liberia</option>
+				<option value="ly">Libya</option>
+                <option value="mg">Madagascar</option>
+                <option value="mw">Malawi</option>
+                <option value="ml">Mali</option>
+				<option value="mr">Mauritania</option>
+                <option value="mu">Mauritius</option>
+                <option value="ma">Morocco</option>
+                <option value="mz">Mozambique</option>
+				<option value="na">Namibia</option>
+				<option value="ne">Nigeria</option>
+                <option value="ng">Niger</option>
+                <option value="rw">Rwanda</option>
+                <option value="st">Sao Tome and Principe</option>
+				<option value="sn">Senegal</option>
+                <option value="sc">Seychelles</option>
+                <option value="sl">Sierra Leone</option>
+                <option value="so">Somalia</option>
+				<option value="za">South Africa</option>
+                <option value="ss">South Sudan</option>
+                <option value="sd">Sudan</option>
+                <option value="tz">Tanzania</option>
+				<option value="tg">Togo</option>
+                <option value="tn">Tunisia</option>
+                <option value="ug">Uganda</option>
+                <option value="zm">Zambia</option>
+				<option value="zw">Zimbabwe</option>
+                <option value="other">Other</option>
+            </select><br><br>
+
+            <label for="comments">Additional Comments:</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+        </fieldset>
+
+        <input type="submit" value="Submit" class="submit-button">
+        <button type="button" class="cancel-button" onclick="window.location.href='index.html'">Cancel</button>
+    </form>
+</body>
+</html>
